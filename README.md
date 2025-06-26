@@ -14,21 +14,17 @@ This repository contains a complete end-to-end computer vision web application t
 
 ```bash
 .
-├── app.py                          # Flask application entry point
-├── requirements.txt                # Python dependencies
-├── Dockerfile                      # Docker configuration for containerizing the app
-├── docker-compose.yml              # Docker Compose setup for multi-service deployments
-├── models/                         # Pre-trained model artifacts (e.g., .h5, .pt)
-├── utils/
-│   ├── preprocess.py               # Image preprocessing utilities
-│   └── predict.py                  # Model inference logic
-├── static/                         # Static assets (CSS, JS, images)
-│   ├── css/
-│   └── js/
-├── templates/                      # HTML templates (Jinja2)
-│   ├── index.html
-│   └── result.html
-└── README.md                       # This file
+├── manage.py                                  # Top-level Django management script (shortcut/alias)
+├── requirements.txt                           # Python dependencies for the project
+├── index.html                                 # Front-end template (duplicate of templates/index.html inside archive)
+└── vision_app/                                # Unzipped archive contents
+    └── Code building Vision Web Application/
+        ├── db.sqlite3                         # SQLite database (development)
+        ├── manage.py                          # Django management script
+        ├── requirements.txt                   # Python dependencies (inside project)
+        └── templates/
+            └── index.html                     # Upload form & result display
+
 ```
 
 ---
